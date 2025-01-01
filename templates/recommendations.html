@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2><b>Recommendations for "{{ movie_name }}"</b></h2>
+        {% if recommendations %}
+            <ul id="recommendations">
+            {% for movie in recommendations %}
+                <label>{{ movie }}</label>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No recommendations found for this movie.</p>
+        {% endif %}
+        <br>
+        <a href="/" id="backButton"><b>Back to Home</b></a>
+    </div>
+</body>
+</html>

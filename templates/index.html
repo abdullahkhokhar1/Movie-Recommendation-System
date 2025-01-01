@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO THE MOVIE RECOMMENDER</h1>
+        <h2><b>Can't Decide What to Watch? We've Got You Covered!</b></h2>
+        <form action="/recommendations" method="POST">
+            <label for="movie_name">Enter a movie name [e.g., "Toy Story (1995)"]:</label>
+            <input type="text" id="movie_name" name="movie_name" required>
+            <button type="submit" id="findButton"><b>Find Recommendations</b></button>
+        </form>
+    </div>
+</body>
+</html>

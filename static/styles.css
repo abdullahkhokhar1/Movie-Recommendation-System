@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.8px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #E50914;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-family: 'Poppins', sans-serif; /* Use the Poppins font already imported in your HTML */
+    font-size: 19px; /* Adjust the size as needed */
+    font-weight: 520; /* Make the text semi-bold */
+    color: #ffffff; /* Choose a suitable color */
+    margin-bottom: 8px; /* Optional: Add some spacing below the label */
+    display: block; /* Ensure it stays on a new line */
+    letter-spacing: 0.8px; /* Adds 2 pixels of space between letters */
+}
+
+#movie_name {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0.4;
+}
+
+#movie_name:focus {
+    opacity: 1; /* Full opacity when focused */
+    outline: none; /* Optional: remove default focus outline */
+}
+
+#findButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #E50914;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#findButton:hover {
+    background-color: #99040b;
+}
+
+#recommendations {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+}
+
+#backButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #E50914;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#backButton:hover {
+    background-color: #99040b;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
