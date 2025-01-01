@@ -8,8 +8,8 @@ app = Flask(__name__)
 # Function to preprocess data
 def preprocess_data():
     # Load the data
-    movies = pd.read_csv("/dataset/movies.csv")
-    ratings = pd.read_csv("/dataset/ratings.csv")
+    movies = pd.read_csv("C:/Users/Abdullah/Desktop/dataset/movies.csv")
+    ratings = pd.read_csv("C:/Users/Abdullah/Desktop/dataset/ratings.csv")
 
     # Merge datasets
     merged_df = pd.merge(movies, ratings, on='movieId')
